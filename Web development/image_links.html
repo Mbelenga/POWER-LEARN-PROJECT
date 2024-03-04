@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Image Links</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
         <header>
             <h1>Welcome to Image Links</h1>
+            <p>Explore our gallery of nature images and learn about different food items.</p>
+            <a href="https://www.example.com/technology"><img src="technology.jpg" alt="Technology"></a>
         </header>
-        <nav>
+        <section class="gallery">
+            <a href="https://www.example.com/nature1"><img src="nature1.jpg" alt="Nature 1"></a>
+            <a href="https://www.example.com/nature2"><img src="nature2.jpg" alt="Nature 2"></a>
+            <a href="https://www.example.com/nature3"><img src="nature3.jpg" alt="Nature 3"></a>
+            <a href="https://www.example.com/nature4"><img src="nature4.jpg" alt="Nature 4"></a>
+            <a href="https://www.example.com/nature5"><img src="nature5.jpg" alt="Nature 5"></a>
+            <a href="https://www.example.com/nature6"><img src="nature6.jpg" alt="Nature 6"></a>
+        </section>
+        <nav class="menu">
+            <h2>Menu</h2>
             <ul>
-                <li><a> href="#home">Home</a></li>
-                <li><a> href="#gallery">Gallery</a></li>
-                <li><a> href="#menu">Menu</a></li>
+                <li><a href="https://www.example.com/pizza">Pizza</a></li>
+                <li><a href="https://www.example.com/sushi">Sushi</a></li>
+                <li><a href="https://www.example.com/tacos">Tacos</a></li>
             </ul>
         </nav>
-        <section id="home">
-            <h2>Home</h2>
-            <P>Welcome to our home page and here is a linked image related to technology</P>
-            img src="Technology.jpeg" alt="This is an image related to technology"
-        </section>
-    </body>
+    </div>
+</body>
 </html>
