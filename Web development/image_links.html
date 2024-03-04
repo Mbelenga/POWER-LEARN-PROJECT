@@ -7,48 +7,76 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
+        header, nav, main, footer {
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav ul li a:hover {
+            color: #666;
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
         }
         .gallery img {
-            width: 100%;
+            max-width: 100%;
             height: auto;
-        }
-        .menu li {
-            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Welcome to Image Links</h1>
-            <p>Explore our gallery of nature images and learn about different food items.</p>
-            <a href="https://www.example.com/technology"><img src="technology.jpg" alt="Technology"></a>
-        </header>
-        <section class="gallery">
-            <img src="nature1.jpg" alt="Nature 1">
-            <img src="nature2.jpg" alt="Nature 2">
-            <img src="nature3.jpg" alt="Nature 3">
-            <img src="nature4.jpg" alt="Nature 4">
-            <img src="nature5.jpg" alt="Nature 5">
-            <img src="nature6.jpg" alt="Nature 6">
+    <header>
+        <h1>Welcome to Image Links</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our website! Explore our curated collection of images.</p>
+            <a href="https://example.com/technology"><img src="technology_image.jpg" alt="Technology Image"></a>
         </section>
-        <nav class="menu">
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <a href="https://example.com/nature"><img src="Nature1.jpg" alt="Nature Image 1"></a>
+                <a href="https://example.com/nature"><img src="Nature2.jpg" alt="Nature Image 2"></a>
+                <a href="https://example.com/nature"><img src="Nature3.jpg" alt="Nature Image 3"></a>
+                <a href="https://example.com/nature"><img src="Nature4.jpg" alt="Nature Image 4"></a>
+            </div>
+        </section>
+        <section id="menu">
             <h2>Menu</h2>
             <ul>
-                <li><a href="https://www.example.com/pizza">Pizza</a></li>
-                <li><a href="https://www.example.com/sushi">Sushi</a></li>
-                <li><a href="https://www.example.com/tacos">Tacos</a></li>
+                <li><a href="https://example.com/food1"><img src="food1_image.jpg" alt="Food 1"> Food 1</a></li>
+                <li><a href="https://example.com/food2"><img src="food2_image.jpg" alt="Food 2"> Food 2</a></li>
+                <li><a href="https://example.com/food3"><img src="food3_image.jpg" alt="Food 3"> Food 3</a></li>
             </ul>
-        </nav>
-    </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Image Links</p>
+    </footer>
 </body>
 </html>
