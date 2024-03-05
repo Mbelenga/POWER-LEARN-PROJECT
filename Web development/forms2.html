@@ -1,41 +1,60 @@
 <!DOCTYPE html>
-<html>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-<label> for="bio">Bio: </label>
-<textarea id="bio" name="bio" rows="10" cols="30">
-Please type in your bio here...
-</textarea>
-<br>
-<input type="checkbox" id="math" name="math" value="Math">
-<label for="math">Math</label>
-<br>
-<input type="checkbox" id="english" name="english" value="English">
-<label for="english">English</label>
-<br>
-<input type="checkbox" id="geography" name="geography" value="Geography">
-<label for="geography">Geography</label>
-<br>
-<input type="radio" id="male" name="gender" value="Male">
-<label>Male</label>
-<input type="radio" id="female" name="gender" value="Female">
-<label>Female</label>
-<br>
-<label> for="lesson">Lesson Location: </label>
-<select id="lesson" name="lesson"
-<
+    <html>
+        <head>
+            <title>Forms In HTML</title>
+        </head>
+        <body>
+            <form action="" method="get" enctype="mutipart/form-data" >
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Terrence Mbelenga" required>
+                <br>
+                <br>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <br>
+                <label for="mobile">Mobile Number: </label>
+                <textarea id="bio" name="bio" rows="10" cols="30">
+                Please type your bio here...
+                </textarea>
+                <br>
+                <input type="checkbox" id="english" name="english" value="English">
+                <label for="math">English</label>
+                <br>
+                <label> for="password">Password: </label>
+                <input type="password" id="password" name="password">
+                <br>
+                <label> for="bio">Bio: </label>
+                <textarea id="bio" name="bio" rows="10" cols="30">
+                Please type in your bio here...
+                </textarea>
+                <br>
+                <input type="checkbox" id="math" name="math" value="Math">
+                <label for="math">Math</label>
+                <br>
+                <input type="checkbox" id="english" name="english" value="English">
+                <label for="english">English</label>
+                <br>
+                <input type="checkbox" id="geography" name="geography" value="Geography">
+                <label for="geography">Geography</label>
+                <br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label>Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label>Female</label>
+                <br>
+                <label> for="lesson">Lesson Location: </label>
+                <select id="lesson" name="lesson" multiple>
+                    <option value=""></option>
+                    <option value="Online">Online</option>
+                    <option value="Physical">Physical</option>
+                </select>
+                <br>
+                <label for="passport_photo">Passport Photo</label>
+                <input type="file" id="passport_photo" name="passport_photo" accept="image/*">
+                <input type="hidden" id="token" name="token" value="">
+                <br>
+                <input type="reset" id="reset" name="reset" value="Reset">
+                <input type="submit" id="submit" name="submit" value="Submit">
+            </form>
+        </body>
+    </html>
