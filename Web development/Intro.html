@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intro To Css</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .introduction {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .skills {
+    background-color: #eaeaea;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .skills ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .introduction, .skills, .contact {
+      padding: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>John Doe</h1>
+</header>
+
+<section class="introduction">
+  <h2>Introduction</h2>
+  <p>Hello, I'm John Doe. I'm a web developer passionate about creating interactive and user-friendly websites.</p>
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Responsive Design</li>
+    <li>Bootstrap</li>
+  </ul>
+</section>
+
+<section class="contact">
+  <h2>Contact Information</h2>
+  <p>Email: john@example.com</p>
+  <p>Social Media: <a href="#">Twitter</a>, <a href="#">LinkedIn</a></p>
+</section>
+
+</body>
+</html>
