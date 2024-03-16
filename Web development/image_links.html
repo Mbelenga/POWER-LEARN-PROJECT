@@ -9,74 +9,111 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0;
         }
-        header, nav, main, footer {
+        header, nav, main {
             padding: 20px;
         }
-        nav ul {
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        nav {
+            background-color: #666;
+            color: #fff;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        section {
+            margin: 20px 0;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
         }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-        nav ul li a:hover {
-            color: #666;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            grid-gap: 20px;
-        }
-        .gallery img {
-            max-width: 100%;
-            height: auto;
+        li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Image Links</h1>
-    </header>
-    <nav>
+
+<header>
+    <h1>Welcome to Image Links</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a> | 
+    <a href="#gallery">Gallery</a> | 
+    <a href="#menu">Menu</a>
+</nav>
+
+<main>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our website! Explore the world of technology with our amazing collection of images.</p>
+        <a href="https://example.com/technology" target="_blank">
+            <img src="Images/technology.jpeg" alt="Technology">
+        </a>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Discover the beauty of nature through our gallery.</p>
+        <div>
+            <a href="https://example.com/nature1" target="_blank">
+                <img src="Images/Nature1.jpeg" alt="Nature 1">
+            </a>
+            <a href="https://example.com/nature2" target="_blank">
+                <img src="Images/Nature2.jpeg" alt="Nature 2">
+            </a>
+            <a href="https://example.com/nature3" target="_blank">
+                <img src="Images/Nature3.jpeg" alt="Nature 3">
+            <a href="https://example.com/nature4" target="_blank">
+                <img src="Images/Nature4.jpeg" alt="Nature 4">
+            </a>
+            <a href="https://example.com/nature5" target="_blank">
+                <img src="Images/Nature5.jpeg" alt="Nature 5">
+            <a href="https://example.com/nature6" target="_blank">
+                <img src="Images/Nature6.jpeg" alt="Nature 6">
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <p>Check out our delicious food items.</p>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#menu">Menu</a></li>
+            <li>
+                <a href="https://example.com/food1" target="_blank">
+                    <img src="food_image1.jpg" alt="Food 1">
+                </a>
+                - Food Item 1
+            </li>
+            <li>
+                <a href="https://example.com/food2" target="_blank">
+                    <img src="food_image2.jpg" alt="Food 2">
+                </a>
+                - Food Item 2
+            </li>
+            <li>
+                <a href="https://example.com/food3" target="_blank">
+                    <img src="food_image3.jpg" alt="Food 3">
+                </a>
+                - Food Item 3
+            </li>
         </ul>
-    </nav>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to our website! Explore our curated collection of images.</p>
-            <a href="https://example.com/technology"><img src="Images/Technology.jpeg" alt="Technology Image"></a>
-        </section>
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery">
-                <img src="Images/Nature1.jpeg" alt="Nature Image 1">
-                <img src="Images/Nature2.jpeg" alt="Nature Image 2">
-                <img src="Images/Nature3.jpeg" alt="Nature Image 3">
-                <img src="Images/Nature4.jpeg" alt="Nature Image 4">
-            </div>
-        </section>
-        <section id="menu">
-            <h2>Menu</h2>
-            <ul>
-                <img src="food1_image.jpg" alt="Food 1"> Food 1>
-                <img src="food2_image.jpg" alt="Food 2"> Food 2>
-                <img src="food3_image.jpg" alt="Food 3"> Food 3>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Image Links</p>
-    </footer>
+    </section>
+</main>
+
 </body>
 </html>
