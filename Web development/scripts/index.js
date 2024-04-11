@@ -15,6 +15,13 @@ var age = 29; //number data type - Integer number
 // boolean data type true or false
 var success = false;
 
+//null data type - empty/unknown value
+var balance = null;
+
+//undefined data type
+var lastName;
+console.log(lastName);
+
 //Camelcase
 var firstName;
 
