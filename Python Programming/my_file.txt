@@ -1,0 +1,6 @@
+This is the first line of text.
+Here is the second line with a number: 42
+And finally, the third line is here!
+This is an appended line 1.
+Another appended line with a number: 99
+Final appended line here.
